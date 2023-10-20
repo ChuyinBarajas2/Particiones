@@ -18,7 +18,7 @@ filas_impares = datos.iloc[::4, :]
 filas_pares = datos.iloc[1::4, :]
 
 # Validación Cruzada por Bloques
-n_splits = 5  # Ajusta el número de bloques según tus necesidades
+n_splits = 5 
 block_cv = KFold(n_splits=n_splits, shuffle=True, random_state=42)
 
 model = RandomForestClassifier()
